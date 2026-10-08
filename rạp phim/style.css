@@ -5,7 +5,7 @@
             background: #83c9e9;
             color: rgb(0, 32, 211);
             font-size: 20px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: sans-serif;
             height: 200px;
             position:relative;
             text-align:center;
@@ -36,7 +36,7 @@
             background: rgb(115, 37, 217);
             color: rgb(232, 252, 4);
             font-size:30px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .menutrai {
             background: lightyellow;
@@ -46,6 +46,13 @@
         .menutrai li {
             padding: 10px;
             border-bottom: 1px solid black;
+            position: relative;
+        }
+        .tuychon {
+            display: none;
+            background: white;
+            color: darkblue;
+            padding: 0;
         }
 
         .menutrai li:hover {
@@ -53,10 +60,48 @@
             color: white;
             cursor: pointer;
         }
+        .timkiem:hover .tuychon {
+            display: block;
+             box-shadow: 0px 0px 10px black;
+
+        }
+
+        .tuychon li:hover {
+            background: rgb(99, 177, 209);
+            color: white;
+        }
         a {
             display:block;
             font-size: 20px;
         }
         li{
             list-style: none;
+        }
+        .poster{
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;   
+        }
+        .phantrang {
+            clear:both;
+            text-align: center;
+            margin: 30px;
+        }
+
+        .phantrang a {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: darkblue;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            margin: 3px;
+        }
+
+        .phantrang a:hover {
+            background: lightblue;
+        }
+
+        .phantrang .active {
+            background: blue;
+            color: white;
         }

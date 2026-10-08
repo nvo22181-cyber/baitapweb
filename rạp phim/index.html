@@ -3,71 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mua vé xem phim</title>
-
-    <style>
-        body{
-            background: lightblue
-        }
-        .header {
-            background: #83c9e9;
-            color: rgb(0, 32, 211);
-            font-size: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            height: 200px;
-            position:relative;
-            text-align:center;
-        }
-
-        .menu {
-            background: rgb(22, 148, 183);
-            color: white;
-            border: 2px solid yellow;
-            border-radius: 10px;
-            padding: 5px;
-            width: fit-content;
-        }
-
-        .header .menu{
-            background: white;
-            color: darkblue;
-            border-spacing:5px;
-        }
-
-        .menu:hover {
-            background: rgb(99, 177, 209);
-            color: white;
-            cursor:crosshair;
-        }
-
-        .thongbao {
-            background: rgb(115, 37, 217);
-            color: rgb(232, 252, 4);
-            font-size:30px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .menutrai {
-            background: lightyellow;
-            color:rgb(53, 0, 245);
-            padding: 10px;
-        }
-        .menutrai li {
-            padding: 10px;
-            border-bottom: 1px solid black;
-        }
-
-        .menutrai li:hover {
-            background: lightblue;
-            color: white;
-            cursor: pointer;
-        }
-        a {
-            display:block;
-            font-size: 20px;
-        }
-        li{
-            list-style: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -85,7 +21,7 @@
                 </td>
 
                 <td>
-                    <div class="menu" >ĐĂNG NHẬP</div>
+                    <a href="dangnhap.html" class="menu">ĐĂNG NHẬP</a>
                 </td>
             </tr>
         </table>
@@ -101,9 +37,9 @@
     <div style="background:blue; width:100%">
     <table>
         <table style="margin-top: 0px;" cellspacing="10px" align="center">
-            <tr text-align="center">
+            <tr text-align="center" class="poster">
                 <td>
-                    <a href="bangiay.html" class="menu">TRANG CHỦ</a>
+                    <a href="cinema.html" class="menu">TRANG CHỦ</a>
                 </td>
                 <td>
                     <a href="https://www.cgv.vn/default/movies/now-showing.html/" class="menu">PHIM ĐANG CHIẾU</a>
@@ -125,10 +61,13 @@
 
     <div style="background:rgb(85, 143, 205); text-align:center; width:15%; float:left;">
         <ul class="menutrai">
-            <li class="l1"><strong>🔍TÌM KIẾM</strong></li>
-            <li>🌏QUỐC GIA</li>
-            <li>📅THEO NĂM</li>
-            <li>🔞ĐỘ TUỔI</li>
+            <li class="timkiem"><strong>🔍TÌM KIẾM</strong>
+            <ul class="tuychon">
+                <li>🌏QUỐC GIA</li>
+                <li>📅THEO NĂM</li>
+                <li>🔞ĐỘ TUỔI</li>
+            </ul>
+            </li>
         </ul>
     </div>
     <div style="width:85%; float:left">
@@ -136,33 +75,34 @@
             <tr>
                 <h1 style="text-align:center; color:darkblue;">NHỮNG BOM TẤN(mém chiếu rạp)</h1>
                 <td style="border-radius: 10px; border: 2px dashed green">
-                    <img src="lama.jpg" height="200" width="300">
+                    <img src="lama.jpg" height="200" width="300" class="poster">
                     <a href="https://www.youtube.com/watch?v=hBikbtx0i0Y&t=8s" style="text-align:center">🎭 Lật Mặt 9</a>
                 </td>
                 <td style="border-radius: 10px; border: 2px dashed green">
-                    <img src="làng.jpg" height="200" width="300">
+                    <img src="làng.jpg" height="200" width="300" class="poster">
                     <a href="https://www.youtube.com/watch?v=n4OjK95W72g&t=1s" style="text-align:center">🛖 Làng</a>
                 </td>
                 <td style="border-radius: 10px; border: 2px dashed green">
-                    <img src="bb.jpg" height="200" width="300">
+                    <img src="bb.jpg" height="200" width="300" class="poster">
                     <a href="https://www.youtube.com/watch?v=XuYsDVwdfcA" style="text-align:center">👶 The Brilliant Boy</a>
                 </td>
                 <td style="border-radius: 10px; border: 2px dashed green">
-                    <img src="taca.jpg" height="200" width="300">
+                    <img src="taca.jpg" height="200" width="300" class="poster">
                     <a href="https://www.youtube.com/watch?v=T81RgmAUfbw" style="text-align:center">Tấm Cám</a>
                 </td>
             </tr>
-            <tr>
-                <td style="border-radius: 10px; border: 2px dashed green">
-                    <img src="taca.jpg" height="200" width="250">
-                    <a href="https://www.youtube.com/watch?v=T81RgmAUfbw" style="text-align:center">Tấm Cám</a>
-                </td>
-            </tr>
-
         </table>
     </div>
+    <div class="phantrang">
+    <a href="#">❮</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">❯</a>
+</div>
     <div>
-        <footer style="background:blue; color:yellow ; clear:both; text-align:center">&copy Copyright 2026 by Nathan Võ and A9 class</footer>
+        <footer style="background:blue; color:yellow ; clear:both; text-align:center;">&copy Copyright 2026 by Nathan Võ and A9 class</footer>
     </div>
     
 </body>
